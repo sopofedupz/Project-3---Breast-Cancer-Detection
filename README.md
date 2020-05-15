@@ -22,7 +22,7 @@ https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
         <li>Look for outliers or missing data</li>
       </ul>
   <li>Decide on inputs to use and weights to apply</li>
-  <li>>Create training and testing sets</li>
+  <li>Create training and testing sets</li>
   <li>Run models to see how well they predict that a cancer tumor is malignant</li>
       <ul>
         <li>Logistic Regression</li>

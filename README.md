@@ -3,11 +3,13 @@
 ### Project Topic: Breast cancer malignancies
 
 ### Team Members:
-Ash
-Enrique
-Jake
-Molly
-Yee Mun 
+<ul>
+  <li>Ash</li>
+  <li>Enrique</li>
+  <li>Jake</li>
+  <li>Molly</li>
+  <li>Yee Mun</li>
+ </ul>
 
 ### Dataset:
 Breast Cancer Wisconsin (Diagnostic) Data Set

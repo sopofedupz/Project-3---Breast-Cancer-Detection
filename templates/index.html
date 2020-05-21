@@ -48,7 +48,7 @@
   <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p> 
 </div>
 
-<!-- Container (About Section) -->
+<!-- Container (Introduction Section) -->
 <div id="intro" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -77,7 +77,7 @@
   </div>
 </div>
 
-<!-- Container (Services Section) -->
+<!-- Container (Preliminary Analysis Section) -->
 <div id="pre" class="container-fluid text-center">
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
@@ -119,7 +119,7 @@
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Container (Logistic Regression Section) -->
 <div id="log" class="container-fluid text-center bg-grey">
   <h2>Portfolio</h2><br>
   <h4>What we have created</h4>
@@ -147,7 +147,7 @@
     </div>
   </div><br>
 
-<!-- Container (Pricing Section) -->
+<!-- Container (Support Vector Machine Section) -->
 <div id="svm" class="container-fluid">
   <div class="text-center">
     <h2>Pricing</h2>
@@ -214,7 +214,7 @@
   </div>
 </div>
 
-<!-- Container (About Section) -->
+<!-- Container (Decision Tree Section) -->
 <div id="dt" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -242,7 +242,7 @@
     </div>
   </div>
 </div>
-<!-- Container (About Section) -->
+<!-- Container (Random Forest Section) -->
 <div id="rf" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -271,7 +271,7 @@
   </div>
 </div>
 
-<!-- Container (About Section) -->
+<!-- Container (K Nearest Neighbor Section) -->
 <div id="knn" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -300,7 +300,7 @@
   </div>
 </div>
 
-<!-- Container (About Section) -->
+<!-- Container (Sequential Section) -->
 <div id="seq" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -338,7 +338,19 @@
       <p>This model allows you to compare different classifiers and see how they differ in accuracy as well as false negatives and positives. </p>
       <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-4">
+      <label for="classifiers">Choose a classifier:</label>
+      <select name="classifiers" id="classifiers">
+        <option href="log">Logistic Regression</option>
+        <option value="svm">Support Vector Machine</option>
+        <option value="dt">Decision Tree</option>
+        <option value="rf">Random Forest</option>
+        <option value="knn">K Nearest Neighbor</option>
+        <option value="seq">Sequential</option>
+      </select><br><br>
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+    <div class="col-sm-4">
       <label for="classifiers">Choose a classifier:</label>
       <select name="classifiers" id="classifiers">
         <option href="log">Logistic Regression</option>

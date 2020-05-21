@@ -10,6 +10,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../static/style.css">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/Resources/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Resources/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Resources/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -29,7 +34,7 @@
         <li><a href="#intro">INTRODUCTION</a></li>
         <li><a href="#pre">PRELIMINARY ANALYSIS</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODELS
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CLASSIFIERS
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#log">LOGISTIC REGRESSION</a></li>
@@ -91,6 +96,16 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Confusion Matrix</h3>
+      <img src="/Resources/Results/Logistic Regression.jpg" alt="Logistic Regression 1" width="500" height="400">
+    </div>
+    <div class="col-sm-6">
+      <h3>ROC Curve</h3>
+      <img src="/Resources/Results/Logistic Regression2.jpg" alt="Logistic Regression 2" width="500" height="400">
+    </div>
+  </div>
 </div>
 
 <!-- Container (Support Vector Machine Section) -->
@@ -102,13 +117,23 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Confusion Matrix</h3>
+      <img src="/Resources/Results/Support Vector Machine.jpg" alt="SVM 1" width="500" height="400">
+    </div>
+    <div class="col-sm-6">
+      <h3>ROC Curve</h3>
+      <img src="/Resources/Results/Support Vector Machine2.jpg" alt="SVM 2" width="500" height="400">
+    </div>
+  </div>
 </div>
 
 <!-- Container (Decision Tree Section) -->
 <div id="dt" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      <h2>Decision Tree Classifier</h2><br>
+      <h2>DECISION TREE</h2><br>
       <h4>Among our several other classifiers we chose to make a model using a decision tree. A decision tree is a simple yet powerful classifier with strong predictive potential.</h4><br>
       <p>By combining several of these yes/no decisions, a giant tree is formed though a supervised machine learning model where the data is split according to a certain parameter. By splitting our dataset (in which we already know the outcome) we can create two separate volumes of data so that we can see how accurately our model is predicting the data. Additionally, we can see how often the model is making mistakes and even if that mistake was a false positive or a false negative. The results of this analysis are shown below.</p>
     </div>
@@ -134,6 +159,16 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Confusion Matrix</h3>
+      <img src="/Resources/Results/Random Forest.jpg" alt="Ramdom Forest 1" width="500" height="400">
+    </div>
+    <div class="col-sm-6">
+      <h3>ROC Curve</h3>
+      <img src="/Resources/Results/Random Forest2.jpg" alt="Random Forest 2" width="500" height="400">
+    </div>
+  </div>
 </div>
 
 <!-- Container (K Nearest Neighbor Section) -->
@@ -141,8 +176,19 @@
   <div class="row">
     <div class="col-sm-12">
       <h2>K NEAREST NEIGHBOR</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h4>Another classifier that was worth considering in our analysis was k nearest neighbor. Simple fine tuning allowed the creation of an over-predicting model.</h4><br>
+      <p>Even though finding the proper k value can be a challenge, in the search of an over-predicting model it was a useful tool. In our testing, we found that using a k value of 3 allowed for an accuracy of 96.3% while still maintaining a rate of just over 1% false negatives. Even though a k value of 9 produced higher accuracy at 96.8% it increased the rate of false negatives to over 2%, effectively doubling it.</p>
+      <p>The plots below show this classifier's results using a k of 3.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Confusion Matrix</h3>
+      <img src="/Resources/Results/K Nearest Neighbor.jpg" alt="K Nearest Neighbor 1" width="500" height="400">
+    </div>
+    <div class="col-sm-6">
+      <h3>ROC Curve</h3>
+      <img src="/Resources/Results/K Nearest Neighbor2.jpg" alt="K Nearest Neighbor 2" width="500" height="400">
     </div>
   </div>
 </div>
@@ -151,9 +197,19 @@
 <div id="seq" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-12">
-      <h2>SUPPORT VECTOR MACHINE</h2><br>
+      <h2>SEQUENTIAL NEURAL NETWORK</h2><br>
       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Confusion Matrix</h3>
+      <img src="/Resources/Results/Sequential Model.jpg" alt="Sequential Model 1" width="500" height="400">
+    </div>
+    <div class="col-sm-6">
+      <h3>ROC Curve</h3>
+      <img src="/Resources/Results/Sequential Model2.jpg" alt="Sequential Model 2" width="500" height="400">
     </div>
   </div>
 </div>
@@ -164,7 +220,7 @@
     <div class="col-sm-4">
       <h2>Comparison</h2><br>
       <h4>In order to make an accurate model, it is important to compare the different classifiers we have analyzed.</h4><br>
-      <p>This model allows you to compare different classifiers and see how they differ in accuracy as well as false negatives and positives. </p>
+      <p>This visualization allows you to compare different classifiers and see how they differ in accuracy as well as false negatives and positives. </p>
     </div>
     <div class="col-sm-4">
       <label for="classifiersLeft">Choose a classifier:</label>
@@ -174,7 +230,7 @@
         <option value="/Resources/Results/Decision Tree">Decision Tree</option>
         <option value="/Resources/Results/Random Forest">Random Forest</option>
         <option value="/Resources/Results/K Nearest Neighbor">K Nearest Neighbor</option>
-        <option value="/Resources/Results/Sequential">Sequential</option>
+        <option value="/Resources/Results/Sequential Model">Sequential</option>
       </select><br><br>
       <object id="leftResults" width="350" height="145" type="text/plain" data="/Resources/Results/Logistic Regression.txt" border="0" style="overflow: hidden;"></object>
       <img id="leftImg1" src="/Resources/Results/Logistic Regression.jpg" width="350" height="225"><br><br>
@@ -188,7 +244,7 @@
         <option value="/Resources/Results/Decision Tree">Decision Tree</option>
         <option value="/Resources/Results/Random Forest">Random Forest</option>
         <option value="/Resources/Results/K Nearest Neighbor">K Nearest Neighbor</option>
-        <option value="/Resources/Results/Sequential">Sequential</option>
+        <option value="/Resources/Results/Sequential Model">Sequential</option>
       </select><br><br>
       <object id="rightResults" width="350" height="145" type="text/plain" data="/Resources/Results/Logistic Regression.txt" border="0" style="overflow: hidden;"></object>
       <img id="rightImg1" src="/Resources/Results/Logistic Regression.jpg" width="350" height="225"><br><br>

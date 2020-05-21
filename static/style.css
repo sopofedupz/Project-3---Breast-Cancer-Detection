@@ -140,13 +140,16 @@ h4 {
   color: white !important;
   background-color: #e44a82 !important;
 }
-
 #logo {
   position: relative;
   background: url(../static/img/logo_gif.gif);
   width: 100px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+#plot {
+  width: 622px;
+  height: 400px;
 }
 footer .glyphicon {
   font-size: 20px;

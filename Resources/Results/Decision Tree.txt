@@ -1,7 +1,7 @@
 Results for Decision Tree classifier:
 -------------------------------------
-Score: 0.9148936170212766
-Inaccurate Predictions: 16
-False Positives: 11
-False Negatives: 5
-Difference (positive is good): 6
+Score: 0.9308510638297872
+Inaccurate Predictions: 13
+False Positives: 7
+False Negatives: 6
+Difference (positive is good): 1

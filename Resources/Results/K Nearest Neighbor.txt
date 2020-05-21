@@ -1,0 +1,7 @@
+Results for K Nearest Neighbor classifier:
+-------------------------------------
+Score: 0.9627659574468085
+Inaccurate Predictions: 7
+False Positives: 5
+False Negatives: 2
+Difference (positive is good): 3

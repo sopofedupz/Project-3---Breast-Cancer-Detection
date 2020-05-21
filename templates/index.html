@@ -331,28 +331,32 @@
       <p>This model allows you to compare different classifiers and see how they differ in accuracy as well as false negatives and positives. </p>
     </div>
     <div class="col-sm-4">
-      <label for="classifiers">Choose a classifier:</label>
-      <select name="classifiers" id="classifiers">
-        <option value="/Resources/Plots/Logistic Regression.jpg">Logistic Regression</option>
-        <option value="svm">Support Vector Machine</option>
-        <option value="dt">Decision Tree</option>
-        <option value="rf">Random Forest</option>
-        <option value="knn">K Nearest Neighbor</option>
-        <option value="seq">Sequential</option>
+      <label for="classifiersLeft">Choose a classifier:</label>
+      <select name="classifiersLeft" id="classifiersLeft" onchange="setLeftPicture();">
+        <option value="/Resources/Results/Logistic Regression">Logistic Regression</option>
+        <option value="/Resources/Results/Support Vector Machine">Support Vector Machine</option>
+        <option value="/Resources/Results/Decision Tree">Decision Tree</option>
+        <option value="/Resources/Results/Random Forest">Random Forest</option>
+        <option value="/Resources/Results/K Nearest Neighbor">K Nearest Neighbor</option>
+        <option value="/Resources/Results/Sequential">Sequential</option>
       </select><br><br>
-      <span class="glyphicon glyphicon-signal logo"></span>
+      <object id="leftResults" width="350" height="145" type="text/plain" data="/Resources/Results/Logistic Regression.txt" border="0" style="overflow: hidden;"></object>
+      <img id="leftImg1" src="/Resources/Results/Logistic Regression.jpg" width="350" height="225"><br><br>
+      <img id="leftImg2" src="/Resources/Results/Logistic Regression2.jpg" width="350" height="225">
     </div>
     <div class="col-sm-4">
-      <label for="classifiers">Choose a classifier:</label>
-      <select name="classifiers" id="classifiers">
-        <option href="log">Logistic Regression</option>
-        <option value="svm">Support Vector Machine</option>
-        <option value="dt">Decision Tree</option>
-        <option value="rf">Random Forest</option>
-        <option value="knn">K Nearest Neighbor</option>
-        <option value="seq">Sequential</option>
+      <label for="classifiersRight">Choose a classifier:</label>
+      <select name="classifiersRight" id="classifiersRight" onchange="setRightPicture();">
+        <option value="/Resources/Results/Logistic Regression">Logistic Regression</option>
+        <option value="/Resources/Results/Support Vector Machine">Support Vector Machine</option>
+        <option value="/Resources/Results/Decision Tree">Decision Tree</option>
+        <option value="/Resources/Results/Random Forest">Random Forest</option>
+        <option value="/Resources/Results/K Nearest Neighbor">K Nearest Neighbor</option>
+        <option value="/Resources/Results/Sequential">Sequential</option>
       </select><br><br>
-      <span class="glyphicon glyphicon-signal logo"></span>
+      <object id="rightResults" width="350" height="145" type="text/plain" data="/Resources/Results/Logistic Regression.txt" border="0" style="overflow: hidden;"></object>
+      <img id="rightImg1" src="/Resources/Results/Logistic Regression.jpg" width="350" height="225"><br><br>
+      <img id="rightImg2" src="/Resources/Results/Logistic Regression2.jpg" width="350" height="225">
     </div>
   </div>
 </div>
@@ -401,5 +405,6 @@ $(document).ready(function(){
 })
 </script>
 
+<script src="logic.js"></script>
 </body>
 </html>

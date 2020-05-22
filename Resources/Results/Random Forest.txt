@@ -1,7 +1,7 @@
 Results for Random Forest classifier:
 -------------------------------------
-Score: 0.9574468085106383
-Inaccurate Predictions: 8
+Score: 0.9521276595744681
+Inaccurate Predictions: 9
 False Positives: 3
-False Negatives: 5
-Difference (positive is good): -2
+False Negatives: 6
+Difference (positive is good): -3
